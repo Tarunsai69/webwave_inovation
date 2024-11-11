@@ -49,7 +49,8 @@ These features assist you in motivating your learners when they perform well and
 
 Screenshots:
 Storage Account
-Screenshot (50)
+![image](https://github.com/user-attachments/assets/540c5fe1-7f10-42f1-ae7a-382bf0e5767e)
+
 
 Static website
 Screenshot (51)
