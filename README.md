@@ -48,8 +48,8 @@ The online learning platform must be device-independent. Because it is an applic
 These features assist you in motivating your learners when they perform well and identifying areas of their learning where they can improve.As a result, any LMS platform should include the capacity to track student progress and evaluate their performance.There should also be the ability to provide pupils with real-time feedback based on their activities and performance.Test scoring, grading, leaderboards, course progress monitoring, numerous scoring methods, multiple assessment types, multiple quiz types, custom quiz options, exam engine, simulations, branching scenarios, and other features are just a few of them.
 
 Screenshots:
-Storage Account
-![image](https://github.com/user-attachments/assets/540c5fe1-7f10-42f1-ae7a-382bf0e5767e)
+Storage Account:
+(https://github.com/user-attachments/assets/540c5fe1-7f10-42f1-ae7a-382bf0e5767e)
 
 
 Static website
