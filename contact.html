@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch</title>
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <style>
+     .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .form-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+    border-radius: 5px;
+    border-top: 5px solid #0e3721;
+  }
+
+  .form-image {
+    flex: 1;
+    background-image: url('./img1.jfif');
+    background-size: cover;
+    background-position: center;
+    height: 475px; /* Adjust height as needed */
+    border-radius: 5px;
+  }
+
+  .form-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .form-input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .form-textarea {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+    box-sizing: border-box;
+  }
+
+  .form-button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .form-button:hover {
+    background-color: #0e3750;
+  }
+
+  .footer {
+    background-color: #000;
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+    font-size: 17px;
+  }
+        .footer {
+            background-color: #000;
+            color: #fff; 
+            padding: 20px;
+            text-align: center;
+            height:20%;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="form-container">
+      <div class="form-content">
+          <div class="form-title">Get In Touch</div>
+          <p>If you have any Questions?....</p>
+          <form id="contactForm">
+              <input type="text" class="form-input" placeholder="name" required>
+              <input type="email" class="form-input" placeholder="Email" required>
+              <input type="number" class="form-input" placeholder="Mobile Number" required>
+              <textarea class="form-textarea" placeholder="Message" required></textarea>
+              <button type="submit" class="form-button">Submit</button>
+          </form>
+      </div>
+      <div class="form-image"></div>
+  </div>
+  <br>
+  <footer class="footer">
+    <p>WEB WAVE INNOVATIONS</p>
+    <p>&copy; 2024 Web Wave Innovations. All rights reserved.</p>
+    <div class="contact-info">
+        <p>Email: webwaveinnovation@gamil.com</p>
+        <p>Phone:+91 814253036</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script>
+      document.getElementById('contactForm').addEventListener('submit', function (event) {
+          event.preventDefault(); 
+          Swal.fire({
+              title: 'We will contact you soon... Thank you!',
+              icon: 'success',
+          }).then(function () {
+              window.location.href = 'index.html';
+          });
+      });
+  </script>
+</body>
+
+</html>

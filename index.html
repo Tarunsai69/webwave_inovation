@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Design</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            
+            /* top: 0; */
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            margin-left: 60px;
+        }
+
+        /* Video Section Styles */
+        .video-container {
+            width: 100%;
+            height: 600px;
+            margin-top: 0;
+            position: relative;
+        }
+
+        .video-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .overlay h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .overlay .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .overlay .button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        .content {
+            width: 1200px;
+            height: auto;
+            margin: auto;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content .par {
+            padding-left: 20px;
+            font-family: Arial;
+            letter-spacing: 1.2px;
+            line-height: 30px;
+            color: black;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .content h1 {
+            font-family: 'Times New Roman';
+            font-size: 60px;
+            padding-left: 20px;
+            margin-top: 5%;
+            letter-spacing: 2px;
+            color: darkmagenta;
+        }
+
+        a {
+            font-weight: 700;
+        }
+
+        a:hover {
+            color: green;
+        }
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .testimonial-card {
+            display: inline-block;
+            width: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-card img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #555;
+        }
+        .instructor-profiles {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .instructor-card {
+            display: inline-block;
+            width: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .instructor-card img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            margin-bottom: 15px;
+        }
+
+        .instructor-card h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .instructor-card p {
+            color: #555;
+        }
+        .about-us {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mission {
+    flex-basis: 60%;
+}
+
+.mission h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sub-heading {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.mission p {
+    margin-bottom: 15px;
+}
+
+.mission-image img {
+    max-width: 100%;
+    height: auto;
+}
+.who-we-are {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.who-we-are .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.who-we-are-image {
+    flex-basis: 40%; /* Adjust width as needed */
+}
+
+.who-we-are-image img {
+    /* max-width: 100%;
+    height: auto; */
+    width: 60%;
+
+}
+
+.who-we-are-text {
+    flex-basis: 70%; /* Adjust width as needed */
+}
+
+.who-we-are-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.who-we-are-text p {
+    margin-bottom: 15px;
+}
+.footer {
+    background-color: #000;
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+    font-size: 17px;
+  }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="sign_in.html" style="margin-right: 20px;">Signin</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="chatbot.html" class="btn btn-primary mr-2">Chatbot</a>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-container">
+        <img src="./imgg1.jpeg">
+        <div class="overlay">
+            <h2 style="color: green;">Web Wave Innovations</h2>
+            <h2><img src="./logo-removebg-preview.png" style="width: 30%; margin-left: -18px; margin-top: -60px;"></h2>
+            <div class="content">
+                <div>
+                    <h1 style="margin-top: -110px; margin-left: 1000px;">Web Design & <br><span>Development</span> <br>Course</h1>
+                    <div style="margin-top: -20px;">
+                        <p class="par">Are you interested in learning web design and development? 
+                            There are plenty of courses available online to help you get started or improve your skills in this field.</p>
+                        <a href="courses.html" class="button">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonials" style="background-color:blanchedalmond">
+        <h2>Student Testimonials</h2>
+        <div class="testimonial-card">
+            <img src="Kiran.jpg" alt="Student 1">
+            <h3 style="color: darkmagenta;">Kiran</h3>
+            <p>"I've learned so much from the web design course. The instructors are knowledgeable, and the hands-on projects really helped solidify my understanding."</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="Mahendar.jpg" alt="Student 2">
+            <h3 style="color: darkmagenta;">Mahendar</h3>
+            <p>"The web development course exceeded my expectations. The curriculum is well-structured and the support from the instructors is fantastic."</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="Kalyan.jpg" alt="Student 3">
+            <h3 style="color: darkmagenta;">Kalyan</h3>
+            <p>"I was a complete beginner before taking this course, but now I feel confident in my ability to create websites from scratch. Highly recommend!"</p>
+        </div>
+        <div class="testimonial-card">
+            <img src="Varshitha.jpg" alt="Student 4">
+            <h3 style="color: darkmagenta;">Raju</h3>
+            <p>"The web design course not only taught me technical skills but also gave me a deeper understanding of design principles. It's been a game-changer for my career."</p>
+        </div>
+    </section>
+
+    <section class="instructor-profiles" style="background-color:gainsboro;">
+        <h2>Instructor Profiles</h2>
+        <div class="instructor-card">
+            <img src="Vikranth.jpg" alt="Instructor 1">
+            <h3 style="color: darkmagenta;">Vikranth</h3>
+            <p>Web Design Expert</p>
+            <p>Vikranth is a seasoned web designer with over 10 years of experience. He specializes in front-end development and user interface design.</p>
+        </div>
+        <div class="instructor-card">
+            <img src="Maha laxmi.jpg" alt="Instructor 2">
+            <h3 style="color: darkmagenta;">Maha laxmi</h3>
+            <p>Web Development Specialist</p>
+            <p>Maha laxmi is a skilled web developer with expertise in back-end programming languages such as PHP and Python. She has a passion for teaching and helping students succeed.</p>
+        </div>
+        <div class="instructor-card">
+            <img src="Yashwanth.jpg" alt="Instructor 3">
+            <h3 style="color: darkmagenta;">Yashwanth</h3>
+            <p>UX/UI Design Mentor</p>
+            <p>Yashwanth is an experienced UX/UI designer with a focus on creating intuitive and user-friendly interfaces. He enjoys sharing his knowledge and mentoring aspiring designers.</p>
+        </div>
+        <div class="instructor-card">
+            <img src="Tarunsai.jpg" alt="Instructor 4">
+            <h3 style="color: darkmagenta;">Madhari Tarunsai</h3>
+            <p>Frontend Developer</p>
+            <p>Tarunsai is a frontend developer with expertise in JavaScript frameworks like React and Angular. He loves empowering students to build interactive and responsive web applications.</p>
+        </div>
+    </section>
+  
+    
+   
+    <footer class="footer">
+        <p>WEB WAVE INNOVATIONS</p>
+        <p>&copy; 2024 Web Wave Innovations. All rights reserved.</p>
+        <div class="contact-info">
+            <p>Email: webwaveinnovation@gamil.com</p>
+            <p>Phone: +91 814253036</p>
+        </div>
+      </footer>
+    
+    
+    
+</body>
+</html>
