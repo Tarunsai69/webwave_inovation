@@ -3,11 +3,11 @@
 The Title of our project is Student Course Explorer. This course provides an overview of the principles and practices of designing for the web. Students learn about layout, typography, color theory, and user interface (UI) design. They also explore tools like Adobe XD, Sketch, or Figma to create wireframes and mockups.HTML/CSS Fundamentals: In this course, students delve into the foundational languages of the web: HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets). They learn to structure web pages using HTML and style them using CSS. Topics include semantic markup, responsive design, and CSS frameworks like Bootstrap or Foundation. JavaScript Basics: JavaScript is the programming language of the web. This course covers fundamental JavaScript concepts such as variables, data types, functions, and control flow. Students also learn about DOM manipulation, event handling, and asynchronous programming. Responsive Web Design: With the increasing diversity of devices accessing the web, responsive design is crucial. This course teaches students how to create websites that adapt and respond to various screen sizes and devices. Topics include media queries, flexible grids, and responsive images .UI/UX Design: User Interface (UI) and User Experience (UX) design are essential aspects of creating engaging and user-friendly websites. This course explores principles of usability, user research, prototyping, and interaction design. Students learn to create intuitive interfaces that enhance user satisfaction .Frontend Development Frameworks (e.g., React, Angular, Vue): Frontend frameworks streamline the development process and enable the creation of dynamic web applications.
 
 Project Details
-Project Demo URL: https://webwave.z13.web.core.windows.net/
+Project Demo URL:  https://tarunsaimadhari.github.io/WEB-WAVE-INNOVATION/
 
 Demo Video URL: https://youtu.be/dBkeH2jz1WU
 
-GitHub Repository URL: https://github.com/madharitarunsai/wab-wave-innovation
+GitHub Repository URL:  https://tarunsaimadhari.github.io/WEB-WAVE-INNOVATION/
 
 Industry: Education
 
